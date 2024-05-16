@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+	color: #023047;
+	background-image: url("https://img.freepik.com/fotos-gratis/fundo-de-papel-de-parede-colorido-desfocado-vivido_58702-3181.jpg?w=740&t=st=1680591866~exp=1680592466~hmac=b5c049beb8f3ed38d078723dbbb6963579ebbc053c0673f314ca73ced841dbad");
+	background-size: 100%;
+	background-position: center;
+	width:100%;
+	height: 100vh;
+	
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.borda{
+	padding: 10px 50px 10px 50px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.formulário {
+    display: flex;
+	padding: 10px 50px 10px 50px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 2px;
+}
+
+.formulário img {
+	margin: auto;
+	display: block;
+	width: 35%;
+    height: 20vh;
+	margin-bottom: 10px;
+}
+
+.formulário h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formulário p {
+    display: inline-block;
+    font-size: 12px;
+    color: #666; 
+    margin-bottom: 10px;
+}
+
+.formulário i {
+    font-size: 1em;
+	background: -webkit-linear-gradient(-45deg, #ffce51, #ff253, #fd5754);
+    transition: all linear 160ms;
+}
+
+.formulário input:focus {
+    border: 1px solid #520c0d;
+}
+
+.formulário input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.formulário a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formulário a:hover {
+    color: #951c1d;
+}
+
+.botão {
+    background-color: #951c1d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.botão:hover {
+    transform: scale(1.05);
+    background-color: #520c0d;
+
+}
+
+.botão2 {
+    background-color: #fffff;
+	color: #00000;
+    font-size: 14px;
+    font-weight: 200;
+    border: solid 1px !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+}
+
+.botão2:hover {
+    transform: scale(1.05);
+    background-color: #a9a9a9;
+}
+
