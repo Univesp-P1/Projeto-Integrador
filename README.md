@@ -2,8 +2,6 @@
 
 <img src="assets/images/controle-de-estoque-screenshot.png">
 
-<p>Minha primeira aplicação PHP orientada a objetos em que tive como base em outros códigos. Tem upload de imagem, CRUD dinâmico, login etc. Utiliza a estrutura MVC e o Mysql. No Front-end utilizei o Bootstrap 4 e javascript puro (VanillaJS) para validar os formulários e fazer conta de multiplicação.</p>
-
 # Funcionalidades
 
 <ul>
@@ -32,3 +30,6 @@ Login<br/>
 # Referências 
 Curso PHP do zero ao Profissional [B7Web](https://cursophpdozeroaoprofissional.com/).<br/>
 O arquivo Core/Core.php escrito em php orientado a objetos foi retirado da primeira parte da videoaula no [YouTube](https://www.youtube.com/watch?v=IMefEdNvz9E), sobre site e painal em MVC, PHP OOP do zero.<br/>
+
+# Forked
+https://github.com/patricia-gomes/controle-de-estoque-php
