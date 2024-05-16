@@ -24,7 +24,7 @@
 
 Login<br/>
 -User: `admin` <br/>
--Password: `admin321`
+-Password: `admin`
 
 
 # Referências 
