@@ -23,7 +23,6 @@
             justify-content: center;
             align-items: center;
         }
-        /* Estilos para os ícones */
         .login i,
         .senha i {
             position: absolute;
@@ -31,7 +30,6 @@
             transform: translateY(-50%);
             left: 10px;
         }
-        /* Ajustar o padding dos campos de entrada para evitar que os ícones se sobreponham ao texto */
         input[type="text"],
         input[type="password"] {
             padding-left: 30px; /* Ajuste conforme necessário */
@@ -42,7 +40,7 @@
    <div class="caixa">
         <div class="borda">
             <div class="row justify-content-center">
-                <img class="mb-4" src="<?php echo BASE_URL; ?>/assets/images/logo.png" width="128" height="128">
+                <img class="mb-4" src="<?php echo BASE_URL; ?>/assets/images/logo.png" width="320" height="130">
             </div>
             <div class="row justify-content-center">
                 <h1 class="h3 mb-3 font-weight-normal">Bem-Vindo(a)</h1>
