@@ -22,8 +22,7 @@
             background-attachment: scroll;
             background-color: #000000;
             color: white;
-            height: 100vh;
-            display: flex;
+			display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -33,7 +32,7 @@
 	<div class="container-fluid">
 		<div class="row menu">
 			<div class="col">
-				<img src="<?php echo BASE_URL; ?>/assets/images/menu.png" width="32" height="32">
+				<!-- <img src="<?php echo BASE_URL; ?>/assets/images/menu.png" width="32" height="32"> -->
 			</div>
 		</div>
 		<!----Content e SideBar---->
