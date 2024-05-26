@@ -13,7 +13,7 @@
 										</li>
 									<?php endforeach; ?></ul>
 								<?php else: ?>
-									<ul><li>Nenhum produto a baixo do estoque!</li></ul>
+									<ul><li>Nenhum produto abaixo do estoque!</li></ul>
 								<?php endif; ?>
 							</div>
 						</div>
