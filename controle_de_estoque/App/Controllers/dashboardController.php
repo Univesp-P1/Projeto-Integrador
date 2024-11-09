@@ -65,3 +65,10 @@ class dashboardController extends Controller
 // Checagem de validade de produtos
 $stmt = $pdo->query("SELECT * FROM products WHERE expiry_date <= DATE_ADD(NOW(), INTERVAL 7 DAY)");
 $expiring_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+<h2>Produtos Perto da Validade</h2>
+<ul>
+    <?php foreach ($expiring_products as $product): ?>
+        <li><?php echo $product['name'] . " - Vencimento em: " . $product['expiry_date']; ?></li>
+    <?php endforeach; ?>
+</ul>
+
