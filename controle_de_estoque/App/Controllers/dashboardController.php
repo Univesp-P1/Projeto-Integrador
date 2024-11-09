@@ -62,3 +62,6 @@ class dashboardController extends Controller
 		$this->load_template('validity', $dados);
 	}
 }
+// Checagem de validade de produtos
+$stmt = $pdo->query("SELECT * FROM products WHERE expiry_date <= DATE_ADD(NOW(), INTERVAL 7 DAY)");
+$expiring_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
