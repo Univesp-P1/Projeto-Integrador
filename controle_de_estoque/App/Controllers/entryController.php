@@ -78,3 +78,6 @@ class entryController extends Controller
 		$this->load_template('search_entry', $dados);
 	}
 }
+// Salvar entrada no histórico
+$stmt = $pdo->prepare("INSERT INTO history (product_id, action, quantity) VALUES (?, 'entrada', ?)");
+$stmt->execute([$product_id, $quantity]);
