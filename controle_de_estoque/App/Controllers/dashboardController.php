@@ -66,3 +66,9 @@ $expiring_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		$this->load_template('validity', $dados);
 	}
 }
+<h2>Produtos Perto da Validade</h2>
+<ul>
+    <?php foreach ($expiring_products as $product): ?>
+        <li><?php echo $product['name'] . " - Vencimento em: " . $product['expiry_date']; ?></li>
+    <?php endforeach; ?>
+</ul>
