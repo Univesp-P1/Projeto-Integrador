@@ -24,6 +24,10 @@ class dashboardController extends Controller
 		}
 		//--------------------------------------------------------------------------
 		$all_entry = $stock->select_a_column_larger_than('entry', 'quant_product', 0);
+		// Checagem de validade de produtos
+$stmt = $pdo->query("SELECT * FROM products WHERE expiry_date <= DATE_ADD(NOW(), INTERVAL 7 DAY)");
+$expiring_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 		$validity = $entry->select_validity();
 		//Verifica em Entry se há algum produto com a quantidade igual ou menor que 5
 		$low_stock = $stock->low_stock();
@@ -62,13 +66,3 @@ class dashboardController extends Controller
 		$this->load_template('validity', $dados);
 	}
 }
-// Checagem de validade de produtos
-$stmt = $pdo->query("SELECT * FROM products WHERE expiry_date <= DATE_ADD(NOW(), INTERVAL 7 DAY)");
-$expiring_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
-<h2>Produtos Perto da Validade</h2>
-<ul>
-    <?php foreach ($expiring_products as $product): ?>
-        <li><?php echo $product['name'] . " - Vencimento em: " . $product['expiry_date']; ?></li>
-    <?php endforeach; ?>
-</ul>
-
