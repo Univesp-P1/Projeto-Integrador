@@ -165,3 +165,7 @@ class exitController extends Controller
 		}
 	}
 }
+// Salvar saída no histórico
+$stmt = $pdo->prepare("INSERT INTO history (product_id, action, quantity) VALUES (?, 'saída', ?)");
+$stmt->execute([$product_id, $quantity]);
+
