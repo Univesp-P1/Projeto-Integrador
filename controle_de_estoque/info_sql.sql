@@ -129,12 +129,3 @@ CREATE TABLE `exits` (
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=36;
-
-CREATE TABLE IF NOT EXISTS history (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    product_id INT,
-    action VARCHAR(10),
-    quantity INT,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
